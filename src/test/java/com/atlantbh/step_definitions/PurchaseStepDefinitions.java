@@ -19,6 +19,8 @@ public class PurchaseStepDefinitions {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
     Actions actions = new Actions(Driver.getDriver());
     Faker faker = new Faker();
+    Select select = new Select(purchasePage.colorDropdown);
+    Select select1 = new Select(purchasePage.sizeDropdown);
 
 
 
@@ -42,11 +44,8 @@ public class PurchaseStepDefinitions {
         actions.moveToElement(purchasePage.addToCartButton).perform();
         assertTrue(purchasePage.addToCartButton.isDisplayed());
 
-
-        Select select = new Select(purchasePage.colorDropdown);
         select.selectByVisibleText("Pink");
 
-        Select select1 = new Select(purchasePage.sizeDropdown);
         select1.selectByValue("36");
     }
 

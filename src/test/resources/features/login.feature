@@ -18,7 +18,7 @@ Feature: Registering and logging in to an account
         #Log in with invalid credentials
       @loginInvalid
     Scenario Outline: Verify user can not log in with INVALID credentials
-        And user enter email "<email>"
+        When user enter email "<email>"
         And user enter password "<password>"
         And  user clicks on log in button
         Then user should see a "ERROR: The username or password you entered is incorrect. Lost your password?" message
