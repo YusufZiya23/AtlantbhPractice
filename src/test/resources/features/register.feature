@@ -4,7 +4,7 @@ Feature: Registering an account
   Background: On the hooks class at step definitions, Before method allows user to be on the home page
       Given user clicks to my account button
 
-      @Register
+      @Register @TC07
     Scenario: Verify user can register an account
       When user enters a username
       And user enters an email

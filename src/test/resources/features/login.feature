@@ -5,7 +5,7 @@ Feature: Registering and logging in to an account
     Given user clicks to my account button
 
       #Log in with valid credentials
-      @loginValid
+      @loginValid @TC01
     Scenario Outline: Verify user log in with VALID credentials
       Given user enter email "<email>"
       When user enter password "<password>"
@@ -16,7 +16,7 @@ Feature: Registering and logging in to an account
         | yusufziyagunes1@gmail.com | yusufziya |
 
         #Log in with invalid credentials
-      @loginInvalid
+      @loginInvalid @TC02
     Scenario Outline: Verify user can not log in with INVALID credentials
         When user enter email "<email>"
         And user enter password "<password>"
@@ -27,7 +27,7 @@ Feature: Registering and logging in to an account
           | yuasdsdf | asdfadsfadf |
 
         #InValid credential
-      @emptyPassword
+      @emptyPassword @TC03
     Scenario Outline: Verify user can not log in with BLANK PASSWORD credentials
         When user enter email "<email>"
         And  user clicks on log in button

@@ -5,7 +5,7 @@ Feature: Buying a product
 
   Background: On the hooks class at step definitions, Before method allows user to be on the home page
 
-      @PositiveAddToCart
+      @PositiveAddToCart @TC05
     #Positive Test Case
     Scenario: Verify user can purchase a product
       When user should click on to the desired product
@@ -14,7 +14,7 @@ Feature: Buying a product
       And user opens the cart
       Then user buys the product by entering necessary information
 
-      @NegativeAddToCart
+      @NegativeAddToCart @TC06
     #Negative Test Case
     Scenario: Verify user can not add a product to cart without selecting options
       When user should click on to the desired product

@@ -6,7 +6,7 @@ Feature: User logging out from an account
   Background: On the hooks class at step definitions, Before method allows user to be on the home page
     Given user already logged in to an account with email "yusufziyagunes1@gmail.com" and password "yusufziya"
 
-      @LogOut
+      @LogOut @TC04
     Scenario: Verify user can log out
       When user should see the "my-account" on url
       And user sees two log out buttons
