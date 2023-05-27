@@ -17,7 +17,7 @@ Feature: Registering and logging in to an account
 
         #Log in with invalid credentials
       @loginInvalid
-    Scenario Outline: Verify user log in with INVAlID credentials
+    Scenario Outline: Verify user can not log in with INVAlID credentials
         And user enter email "<email>"
         And user enter password "<password>"
         And  user clicks on log in button

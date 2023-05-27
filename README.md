@@ -1,6 +1,6 @@
 # ATLANTBH PROJECT
 
-In this framework, I implemented Behavior Driven Development/Cucumber approach to implement my smoke testing. I used Page Object Model to store my WebElements, I used Maven as a build automation tool where it comes with its default pom.xml file, It allowed me to store & manage dependencies. I used Gherkin Language in my feature files. 
+In this framework, I have 13 test cases. I implemented Behavior Driven Development/Cucumber approach to implement my smoke testing. I used Page Object Model to store my WebElements, I used Maven as a build automation tool where it comes with its default pom.xml file, It allowed me to store & manage dependencies. I used Gherkin Language in my feature files. 
 
 I created specific utilities such as Driver, ConfigurationReader. I used encapsulation to reach my driver which is one of the OOP concepts. I used getDriver method. In that method, driver name is declared from configuration.properties file with the help of getProperty method which comes from ConfigurationReader utility class. 
 
@@ -56,4 +56,4 @@ assertTrue();
 assertEquals();
 
 ### JENKINS
-I also used Jenkins to take advantage of an open source cloud automation server for my smoke testing. I build my Jenkins job where it runs every day at 6 in the morning. I got the results of my test cases on my email as cucumber reports. 
+I also used Jenkins to take advantage of a cloud automation server for my smoke testing. I created my EC2 console on AWS. Then I build my Jenkins job where it runs every day at 6 in the morning. I got the results of my test cases on my email as cucumber reports. 
