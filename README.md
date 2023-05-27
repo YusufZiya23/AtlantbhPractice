@@ -40,15 +40,12 @@ Inheritance
 
 Encapsulation
 
+String: contains
+
 
 #### actions class: 
 
 moveToElement().perform;
-
-
-#### String: 
-
-contains
 
 
 #### Java Faker: 
