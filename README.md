@@ -16,43 +16,73 @@ I also have FailedTestRunner class where it allows me to run only the tests that
 
 In these tests I have used Selenium WebDriver and Java. I implemented many methods from different libraries & classes: 
 
-Selenium WebDriver: 
+#### Selenium WebDriver: 
+
 getCurrentUrl(); 
+
 click(); 
+
 getText(); 
+
 sendKeys(); 
+
 Select class (selectByVisibleText(), selectByValue())
+
 WebDriverWait
 
-Java:
+#### Java:
+
 foreach loop
+
 List<WebElements>
+
 Inheritance
+
 Encapsulation
 
-actions class: 
+
+#### actions class: 
+
 moveToElement().perform;
 
-String class: 
+
+#### String: 
+
 contains
 
-Java Faker: 
+
+#### Java Faker: 
+
 username 
+
 email address
+
 password
+
 address
+
 first name
+
 last name
+
 phone number
 
-Annotations:
+
+#### Annotations:
+
 @Findby
+
 @Before
+
 @After
 
-Assertions: 
+
+#### Assertions: 
+
 JUnit
+
 assertTrue();
+
 assertEquals();
 
 ### JENKINS
