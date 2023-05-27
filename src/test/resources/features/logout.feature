@@ -7,7 +7,7 @@ Feature: User logging out from an account
     Given user already logged in to an account with email "yusufziyagunes1@gmail.com" and password "yusufziya"
 
       @LogOut
-    Scenario: user logs out
+    Scenario: Verify user can log out
       When user should see the "my-account" on url
       And user sees two log out buttons
       Then user clicks to any log out button

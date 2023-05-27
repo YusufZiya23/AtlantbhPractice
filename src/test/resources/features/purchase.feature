@@ -7,7 +7,7 @@ Feature: Buying a product
 
       @PositiveAddToCart
     #Positive Test Case
-    Scenario: Purchasing a product
+    Scenario: Verify user can purchase a product
       When user should click on to the desired product
       And user selects a color, size and quantity
       And user adds product to cart
@@ -16,7 +16,7 @@ Feature: Buying a product
 
       @NegativeAddToCart
     #Negative Test Case
-    Scenario: User should not add a product to cart without selecting options
+    Scenario: Verify user can not add a product to cart without selecting options
       When user should click on to the desired product
       And user clicks to add to cart button
       Then user confirms pop up appears with a "Please select some product options before adding this product to your cart." message

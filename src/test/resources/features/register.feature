@@ -5,7 +5,7 @@ Feature: Registering an account
       Given user clicks to my account button
 
       @Register
-    Scenario: Registering an account
+    Scenario: Verify user can register an account
       When user enters a username
       And user enters an email
       And user enter a password

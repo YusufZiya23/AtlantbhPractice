@@ -9,27 +9,27 @@ Feature: Searching a product
 
     @PositiveSearch
     #Positive Test Case
-  Scenario: Searching a product with valid credentials
+  Scenario: Verify user can search a product with valid credentials
     When user search for "PINK DROP SHOULDER OVERSIZED T SHIRT"
     And user confirms searched product is displayed
     Then user sees related products are displayed
 
     @NegativeSearch
     #Negative Test Case
-  Scenario: Searching a product with invalid credentials
+  Scenario: Verify user searches with invalid credentials and gets error
     When user search for "abc"
     And user sees the "No products were found matching your selection." message
     Then user confirms opening time is displayed
 
     @SearchKeyword
       #Positive Test Case
-  Scenario: User searching for a product with a keyword
+  Scenario: Verify user can search for a product with a keyword
     When user search for "Pink"
     And user sees filter dropdowns
     Then user confirms shown products have the "PINK" in their text
 
     @Typo
     #Negative Test Case
-  Scenario: User makes a typo in search box
+  Scenario: Verify user gets error with typo in search box
       When user search for "Ponk"
       Then user sees the "No products were found matching your selection." message
